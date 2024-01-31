@@ -1,0 +1,34 @@
+.
+├── README
+#################################################################################                                
+└── data                                    
+#################################################################################
+    ├── dataset_description.pdf             # visual descriptor for dataset
+    ├── Explore_cc_core.ipynb               # jupyter notebook demonstrating using cc_core dataset
+    ├── cc_core.csv                         # crowdcube pitch dataset in different granulatirty: min < core < full
+    ├── cc_core.json                        # format: csv or json
+    ├── cc_full.csv                         #
+    ├── cc_full.json                        #
+    ├── cc_min.csv                          #
+    ├── cc_min.json                         #
+    ├── cc_min.json                         #
+#################################################################################
+    ├── Explore_posts.ipynb                 # jupyter notebook demonstrating using comments dataset
+    ├── discussion.json                     # contains the "investor discussions"
+    ├── updates.json                        # containts the "latest updates"
+######################only relevant for running the crawler######################    
+└────── crowdcube
+│   │   └── spiders                 
+│   │       ├── deprecated.py              # crawler for pitches 2007 or older
+│   │       ├── find_pitches.py            # find companies urls and meta information on pitches
+│   │       └── retrieve_pitches.py        # crawl pitches
+│   ├── crowdcube.ipynb                    # jupyter notebook to prepare/clean data
+│   ├── failed.txt                         # lists of pitches 2007 or older for which "retrieve_pitches.py" fails
+│   ├── old.json                           # result "deprecated.py"
+│   ├── pitches.json                       # results "retrieve_pitches.py"
+│   └── pitches_meta.json                  # 
+
+
+
+DATA
+- Use "./data" and checkout "dataset_description.pdf" for finding the keywords
